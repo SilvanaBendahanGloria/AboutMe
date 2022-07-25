@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*https://codepen.io/yuhomyan/pen/ExKvNVa - Hamburger Menu 2-*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +7,7 @@
   font-family: "Oswald", sans-serif;
 }
 
+/*https://codepen.io/yuhomyan/pen/ExKvNVa - Hamburger Menu 2-*/
 #header {
   height: 100vh;
   min-height: 100vh;
@@ -230,13 +230,11 @@ footer h6:after {
 }
 
 .btn-footer {
-  color: grey;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 43px;
-  font-size: 13px;
-  padding: 7px 30px;
+  padding: 7px;
   line-height: 47px;
+}
+.btn-footer img {
+  border-radius: 50%;
 }
 
 .btn-footer:hover {
