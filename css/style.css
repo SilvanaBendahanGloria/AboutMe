@@ -6,6 +6,10 @@
   font-family: "Oswald", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 /*En ID about-me*/
 span {
   position: relative;
@@ -33,83 +37,150 @@ span:before {
   }
 }
 /*En ID works*/
-.round0 {
-  margin: 20px;
+.round {
+  margin: 50px;
+  position: relative;
+}
+.round__spin {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(50%, 50%);
+  animation: spin infinite linear both;
+}
+.round__spin:nth-child(1) {
+  width: calc(18%);
+  height: calc(18%);
+}
+.round__spin:nth-child(2) {
+  width: calc(28%);
+  height: calc(28%);
+}
+.round__spin:nth-child(3) {
+  width: calc(38%);
+  height: calc(38%);
+}
+.round__spin:nth-child(4) {
+  width: calc(48%);
+  height: calc(48%);
+}
+.round__spin:nth-child(5) {
+  width: calc(58%);
+  height: calc(58%);
+}
+.round__spin:nth-child(6) {
+  width: calc(68%);
+  height: calc(68%);
+}
+.round__spin:nth-child(7) {
+  width: calc(78%);
+  height: calc(78%);
+}
+.round__spin:nth-child(8) {
+  width: calc(88%);
+  height: calc(88%);
+}
+.round__spin:nth-child(9) {
+  width: calc(98%);
+  height: calc(98%);
+}
+.round__spin:nth-child(10) {
+  width: calc(108%);
+  height: calc(108%);
+}
+.round__ball {
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  transform: translateY(100%);
 }
 
-.round1 {
+@keyframes spin {
+  from {
+    transform: translate(50%, 50%);
+  }
+  to {
+    transform: translate(50%, 50%) rotate(360deg);
+  }
+}
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__spin--1 {
+  animation-duration: 3s;
+}
+
+.round__ball--1 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: green;
-  margin-left: 50%;
-  margin-top: 0%;
-  animation-name: balls;
-  animation-duration: 5s;
-  animation-timing-function: cubic-bezier(0.15, 0.25, 0.4, 0.15);
-  animation-iteration-count: infinite;
 }
 
-@keyframes balls {
-  0%, 100% {
-    transform: rotate(180deg) translate(-110px, -10px) rotate(-180deg);
-  }
-  50% {
-    transform: rotate(0deg) translate(-111px, 10px) rotate(0deg);
-  }
-}
-.round2 {
+.round__ball--2 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: blue;
-  margin-left: 48%;
-  margin-top: 1%;
 }
 
-.round3 {
+.round__ball--3 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: yellow;
-  margin-left: 48%;
-  margin-top: 1%;
 }
 
-.round4 {
+.round__ball--4 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: violet;
-  margin-left: 50%;
-  margin-top: 1%;
 }
 
-.round5 {
+.round__ball--5 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: orangered;
-  margin-left: 54%;
-  margin-top: -1%;
 }
 
-.round6 {
+.round__ball--6 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: purple;
-  margin-left: 59%;
-  margin-top: -3%;
 }
 
-.round7 {
+.round__ball--7 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: grey;
-  margin-left: 64%;
-  margin-top: -5%;
 }
 
 /*https://codepen.io/yuhomyan/pen/ExKvNVa - Hamburger Menu 2-*/
