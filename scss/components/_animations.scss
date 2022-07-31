@@ -1,14 +1,14 @@
 /*En ID about-me*/
-#about-me, #studies{
+#about-me, #studies {
     padding: 15vh 5vw;
     height: 100vh;
 }
 
-span {
+.about-me__tachado__span {
     position: relative;
 }
 
-span:before {
+.about-me__tachado__span:before {
     content: "";
     position: absolute;
     background-color: #242424;
