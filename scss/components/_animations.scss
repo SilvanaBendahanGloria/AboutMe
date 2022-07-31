@@ -1,4 +1,9 @@
 /*En ID about-me*/
+#about-me, #studies{
+    padding: 15vh 5vw;
+    height: 100vh;
+}
+
 span {
     position: relative;
 }
@@ -6,7 +11,7 @@ span {
 span:before {
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: #242424;
     width: 0vw;
     height: 200%;
     animation-name: tachado;
@@ -24,14 +29,14 @@ span:before {
 /*En Id Works*/
 .works__flip {
     position: relative;
-    height: 50vh;
+    height: 100vh;
 }
 
 .works__flip__card {
     position: absolute;    
     top: 50%;
     left: 50%;
-    height: 50vh;
+    height: 75vh;
     width: 30vw;
     transform: translate(-50%, -50%);
     transform-style: preserve-3d;
@@ -56,7 +61,6 @@ span:before {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000000;
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: .5s;
@@ -65,13 +69,12 @@ span:before {
 .card-front--2 {
     height: 100%;
     width: 100%;
-    background-image:url(/images/d&s.png);
+    background-image:url(/images/dgeyc.png);
     background-position: 50% 50%;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000000;
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: .5s;
@@ -80,13 +83,54 @@ span:before {
 .card-front--3 {
     height: 100%;
     width: 100%;
+    background-image:url(/images/d&s.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+}
+
+.card-front--4 {
+    height: 100%;
+    width: 100%;
     background-image:url(/images/caesar.png);
     background-position: 50% 50%;
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #000000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+}
+
+.card-front--5 {
+    height: 100%;
+    width: 100%;
+    background-image:url(/images/crillon.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: .5s;
+}
+
+.card-front--6 {
+    height: 100%;
+    width: 100%;
+    background-image:url(/images/argenta.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: .5s;
@@ -99,6 +143,7 @@ span:before {
     top: 0;
     left: 0;
     background-color: white;
+    border: 5px solid #242424;
     backface-visibility: hidden;
     transform: rotateX(180deg);
     transition: .5s;
