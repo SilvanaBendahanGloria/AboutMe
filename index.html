@@ -26,24 +26,21 @@
 </head>
 <body>
    <header id="header">
-      <input type="checkbox" id="active">
-         <label for="active" class="menu-btn"><span></span></label>
-         <label for="active" class="close"></label>
-         <div class="wrapper">
-            <ul>
-               <li><a href="#header">Home</a></li>
-               <li><a href="#about-me">Sobre Mí</a></li>
-               <li><a href="#studies">Estudios</a></li>
-               <li><a href="#works">Laboral</a></li>
-               <li><a href="english.html"><img src="images/united-kingdom.png" alt="Bandera del Reino Unido"></a></li>
-            </ul>
+      <nav>
+         <div class="navicon">
+           <div></div>
          </div>
-         <div class="content">
-            <div class="title">
-                Hola Mundo
-            </div>
-            <p> Bienvenidos a mi página web</p>
-         </div>
+         <ul>
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#about-me">Sobre Mí</a></li>
+            <li><a href="#studies">Estudios</a></li>
+            <li><a href="#works">Trabajos</a></li>
+            <li><a href="english.html"><img src="images/united-kingdom.png" alt="Bandera británica"></a></li>
+         </ul>
+      </nav>
+      <div>
+         <p>SBG</p>
+      </div>
    </header>
 
    <main>
@@ -107,7 +104,7 @@
          <h2>Trabajos</h2>
          <section class="works_flex">
             <div class="row">
-               <div class="col">
+               <div class="col-sm-4">
                   <div class="works__flip">
                      <div class="card works__flip__card">
                         <div class="card-front--1"></div>
@@ -125,7 +122,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col">
+               <div class="col-sm-4">
                   <div class="works__flip">
                      <div class="card works__flip__card">
                         <div class="card-front--2"></div>
@@ -143,7 +140,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col">
+               <div class="col-sm-4">
                   <div class="works__flip">
                      <div class="card works__flip__card">
                         <div class="card-front--3"></div>
