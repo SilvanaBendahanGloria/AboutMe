@@ -10,7 +10,7 @@ html {
 }
 
 /*En ID about-me*/
-#about-me, #studies {
+#about-me, .studies__cards, #studies__abilities {
   padding: 15vh 5vw;
   height: 100vh;
 }
