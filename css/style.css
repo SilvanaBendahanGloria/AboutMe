@@ -184,6 +184,10 @@ html {
   list-style-type: none;
 }
 
+.title__car {
+  text-align: center;
+}
+
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/
 :root {
   --size: 60;
@@ -195,13 +199,12 @@ html {
 }
 
 .car {
-  width: 100%;
+  width: 80%;
   height: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  background: #ccdde2;
 }
 
 .base .whole .bug {

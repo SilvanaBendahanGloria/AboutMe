@@ -176,6 +176,9 @@
     }
 }
      
+.title__car {
+    text-align: center;
+}
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/
 :root {
     --size: 60;
@@ -210,14 +213,14 @@
   }
   
   .car {
-    width: 100%;
+    width: 80%;
     height: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     // background-image: linear-gradient($main1, $main3);
-    background: $bg;
+    
   }
   
   .base {
