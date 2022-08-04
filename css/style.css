@@ -24,10 +24,10 @@ html {
   position: absolute;
   background-color: #242424;
   width: 0vw;
-  height: 200%;
+  height: 100%;
   animation-name: tachado;
   animation-duration: 3s;
-  animation-delay: 3s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -61,7 +61,7 @@ html {
   top: 50%;
   left: 50%;
   height: 75vh;
-  width: 30vw;
+  width: 100%;
   transform: translate(-50%, -50%);
   transform-style: preserve-3d;
   perspective: 600px;
@@ -185,17 +185,13 @@ html {
 }
 
 .title__car {
-  text-align: center;
+  margin-left: 20vw;
 }
 
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/
 :root {
   --size: 60;
   --unit: calc((var(--size) / 800) * 1vmin);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .car {
@@ -912,8 +908,8 @@ html {
   margin: 2em;
   position: sticky;
   bottom: 0;
-  left: 100vw;
-  width: 5vw;
+  left: 100%;
+  width: 10%;
 }
 
 .to-top {
@@ -1236,6 +1232,18 @@ html {
     transform: scale(1, 0);
   }
 }
+/*Efecto tachado en About-me*/
+@media only screen and (max-width: 480px) {
+  .about-me__tachado__span {
+    text-decoration: line-through;
+  }
+  .about-me__tachado__span:before {
+    animation: none;
+  }
+  .boton a {
+    font-size: 0.5em;
+  }
+}
 /*CodePen Home
 Material design round mask menu (pure css): https://codepen.io/sorinbotirla/pen/QyoYgx*/
 header {
@@ -1256,7 +1264,7 @@ header div p {
   top: 0;
   right: 0;
   padding-top: 2%;
-  padding-right: 2%;
+  padding-right: 5%;
   font-size: 2rem;
 }
 

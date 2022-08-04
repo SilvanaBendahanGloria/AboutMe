@@ -13,10 +13,10 @@
     position: absolute;
     background-color: #242424;
     width: 0vw;
-    height: 200%;
+    height: 100%;
     animation-name: tachado;
     animation-duration: 3s;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -48,7 +48,7 @@
     top: 50%;
     left: 50%;
     height: 75vh;
-    width: 30vw;
+    width: 100%;
     transform: translate(-50%, -50%);
     transform-style: preserve-3d;
     perspective: 600px;
@@ -177,8 +177,9 @@
 }
      
 .title__car {
-    text-align: center;
+    margin-left: 20vw;
 }
+
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/
 :root {
     --size: 60;
@@ -208,45 +209,40 @@
   $tireBlueLight: #688990;
   $tireBlueDark: #53676e;
   
-  * {
-    box-sizing: border-box;
-  }
+.car {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
   
-  .car {
-    width: 80%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    // background-image: linear-gradient($main1, $main3);
-    
-  }
+.base {
+  .whole {
+    .bug {
+      width: calc(800 * var(--unit));
+      height: calc(350 * var(--unit));
+      position: relative;
   
-  .base {
-    .whole {
-      .bug {
-        width: calc(800 * var(--unit));
-        height: calc(350 * var(--unit));
-        position: relative;
-  
-        &__tire__shadow__ground {
-          position: absolute;
-          right: 5%;
-          bottom: 0%;
-          width: 30%;
-          height: 5%;
-          background: #000;
-          border-radius: 100%;
-          background: radial-gradient($bigshasow 0% 50%, transparent),
-            radial-gradient($bigshasow 0% 30%, transparent),
-            radial-gradient($bigshasow 0% 20%, transparent);
+      &__tire__shadow__ground {
+        position: absolute;
+        right: 5%;
+        bottom: 0%;
+        width: 30%;
+        height: 5%;
+        background: #000;
+        border-radius: 100%;
+        background: radial-gradient($bigshasow 0% 50%, transparent),
+          radial-gradient($bigshasow 0% 30%, transparent),
+          radial-gradient($bigshasow 0% 20%, transparent);
           filter: blur(3px);
   
-          &:nth-child(2n) {
-            left: 1%;
-          }
+        &:nth-child(2n) {
+          left: 1%;
         }
+      }
+
         &__whole__shadow {
           position: absolute;
           right: -2%;
@@ -256,9 +252,10 @@
           background: #000;
           border-radius: 100%;
           background: radial-gradient($bigshasow 0% 50%, transparent),
-            radial-gradient($bigshasow 0% 30%, transparent);
+          radial-gradient($bigshasow 0% 30%, transparent);
           filter: blur(4px);
         }
+
         &__body__b__back {
           position: absolute;
           right: 0;
@@ -275,6 +272,7 @@
           );
           box-shadow: -3px 1px 1px 2px $main1 inset, -7px 3px 4px 2px $main2 inset;
           overflow: hidden;
+
           .engineroom {
             position: absolute;
             left: 85%;
@@ -282,7 +280,6 @@
             width: 20%;
             height: 50%;
             transform: rotate(-50deg);
-            // background: $main2;
             border: calc(1 * var(--unit)) solid $lineShadow;
             border-radius: 25% 25% 0% 0% / 25% 25% 0% 0%;
             overflow: hidden;
@@ -296,6 +293,7 @@
               display: flex;
               justify-content: start;
               flex-direction: column;
+
               .engine__line {
                 width: 100%;
                 height: 7%;
@@ -303,6 +301,7 @@
               }
             }
           }
+
           .window__back__w {
             position: absolute;
             left: 66%;
@@ -316,7 +315,7 @@
             overflow: hidden;
             
             &::after{
-              content: "";
+            content: "";
             position: absolute;
             left: 0%;
             top: 0%;
@@ -337,6 +336,7 @@
             }
           }
         }
+
         &__body__b__top {
           position: absolute;
           right: 0;
@@ -369,7 +369,6 @@
             top: -35%;
             width: 27%;
             height: 56%;
-            // background: #b6d4de;
             border-right: calc(1 * var(--unit)) solid $lineShadow;
             border-radius: 0% 49% 42% 0% / 0% 49% 42% 0%;
           }
@@ -380,7 +379,6 @@
             top: 37%;
             width: 77%;
             height: 23%;
-            // background: #b6d4de;
             border-top: calc(1 * var(--unit)) solid $lineShadow;
             border-radius: 0% 49% 42% 0% / 0% 49% 42% 0%;
             transform: rotate(-25deg);
@@ -413,7 +411,6 @@
           top: 5%;
           width: 4%;
           height: 40%;
-          // background: #b6d4de;
           transform: rotate(-332.944deg);
           background-image: linear-gradient(
             332.944deg,
@@ -531,6 +528,7 @@
             background: $bg;
             border-radius: 5% 100% 17% 6% / 8% 88% 21% 9%;
           }
+
           &__seat {
             position: absolute;
             right: 12%;
@@ -542,6 +540,7 @@
             border-radius: 63% 14% 19% 0% / 63% 14% 19% 0%;
           }
         }
+
         .bug__headlight {
           position: absolute;
           left: 0%;
@@ -581,6 +580,7 @@
             border-radius: 93% 0% 0% 0% / 100% 0% 0% 0%;
           }
         }
+
         .bug__fender__b {
           position: absolute;
           left: 10%;
@@ -602,6 +602,7 @@
             background: #000;
             border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;
           }
+
           .bug__fender__shadow__box {
             position: absolute;
             right: 12%;
@@ -609,6 +610,7 @@
             width: 20%;
             height: 20%;
             background: #000;
+
             .bug__fender__shadow__cir {
               position: absolute;
               right: 0%;
@@ -620,6 +622,7 @@
             }
           }
         }
+
         .bug__taillight {
           position: absolute;
           right: 1%;
@@ -635,6 +638,7 @@
             $taillightLight 90% 100%
           );
         }
+
         .bug__fender__bb {
           position: absolute;
           right: 0%;
@@ -657,6 +661,7 @@
             background: #000;
             border-radius: 93% 0% 0% 0% / 100% 0% 0% 0%;
           }
+
           .bug__fender__shadow__box {
             position: absolute;
             left: 12%;
@@ -664,6 +669,7 @@
             width: 20%;
             height: 32%;
             background: #000;
+
             .bug__fender__shadow__cir {
               position: absolute;
               right: 0%;
@@ -675,6 +681,7 @@
             }
           }
         }
+
         .bug__fender__fb {
           position: absolute;
           right: 16%;
@@ -697,6 +704,7 @@
             background: #000;
             border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;
           }
+
           .bug__fender__shadow__box {
             position: absolute;
             right: 12%;
@@ -704,6 +712,7 @@
             width: 20%;
             height: 20%;
             background: #000;
+
             .bug__fender__shadow__cir {
               position: absolute;
               right: 0%;
@@ -715,6 +724,7 @@
             }
           }
         }
+
         .bug__tire__shadow {
           position: absolute;
           left: 6%;
@@ -723,10 +733,12 @@
           height: calc(140 * var(--unit));
           background: #000;
           border-radius: 100%;
+
           &:nth-child(2n) {
             left: 70%;
           }
         }
+
         .bug__tire {
           position: absolute;
           left: 2%;
@@ -750,6 +762,7 @@
             background: $tireWhite;
             border-radius: 100%;
           }
+
           &__blue {
             position: absolute;
             left: 50%;
@@ -759,6 +772,7 @@
             height: 80%;
             background: $tireBlueLight;
             border-radius: 100%;
+
             &::before {
               content: "";
               position: absolute;
@@ -782,6 +796,7 @@
               border-radius: 100%;
             }
           }
+
           &__wheel {
             position: absolute;
             left: 50%;
@@ -811,6 +826,7 @@
             }
           }
         }
+
         .bug__step {
           position: absolute;
           left: 23%;
@@ -829,6 +845,7 @@
             border-top: calc(4 * var(--unit)) #121212 solid;
           }
         }
+
         .bug__step__shadow {
           position: absolute;
           left: 23%;
@@ -838,12 +855,14 @@
           background: #121212;
           border-radius: 0 0 10px 10px/ 0 0 10px 10px;
         }
+
         .bug__handle {
           position: absolute;
           left: 45%;
           top: 42%;
           width: 5%;
           height: 5%;
+
           &__shadow {
             position: absolute;
             left: 20%;
@@ -853,6 +872,7 @@
             background: linear-gradient($main4 0% 50%, $main2 60% 100%);
             border-radius: 100% 63% 53% 82% / 100% 63% 53% 82%;
           }
+
           &__handle {
             position: absolute;
             left: 0%;
@@ -864,14 +884,14 @@
             box-shadow: 0px -1px 1px 0px $wheelDark inset;
           }
         }
+
         .bug__door {
           position: absolute;
           left: 25%;
           top: 7%;
           width: 27%;
           height: 75%;
-          // border: 1px solid red;
-  
+            
           &__line__right {
             position: absolute;
             right: 0%;
@@ -882,6 +902,7 @@
             border-top: 1px solid $lineShadow;
             border-radius: 100% 100% 0% 0% / 25% 0% 0% 0%;
           }
+
           &__line__left__btm {
             position: absolute;
             left: 0%;
@@ -890,6 +911,7 @@
             height: 57%;
             border-right: 1px solid $lineShadow;
           }
+
           &__line__left__top {
             position: absolute;
             left: 10%;
@@ -908,11 +930,13 @@
             height: 7%;
             background: #000;
             background: linear-gradient(90deg, $main3, $main4);
+
             &:nth-child(2n) {
               top: 87%;
             }
           }
         }
+
         .bug__longline {
           position: absolute;
           left: 3%;
@@ -923,18 +947,17 @@
           border-radius: 100% 75% 75% 100% / 100% 75% 75% 100%;
           box-shadow: 0px 1px 1px 1px $main2 inset, 0px 2px 2px 1px $main2 inset;
         }
+
         .bug__door__line__back {
           position: absolute;
           left: 40%;
           top: 7%;
           width: 50%;
           height: 65%;
-  
           border-top: calc(1 * var(--unit)) $lineShadow solid;
           border-radius: 0% 72% 0% 0% / 0% 100% 0% 0%;
-          // box-shadow: 0px 1px 1px 1px $main2 inset,
-          // 0px 5px 4px 2px $main2 inset;
         }
+
         .bug__bumper__back {
           position: absolute;
           right: -4%;
@@ -956,6 +979,7 @@
             background: $bumper2;
           }
         }
+
         .bug__bumper__front {
           position: absolute;
           left: -3%;
@@ -978,6 +1002,7 @@
             background: $bumper2;
           }
         }
+
         .bug__ex {
           position: absolute;
           right: -2%;
@@ -986,9 +1011,9 @@
           height: 5%;
           background: $bumper1;
           transform: skewX(-20deg) rotate(10deg);
-          // border-radius: 0% 10% 10% 30% / 0% 9% 15% 99%;
           box-shadow: 0px 3px 3px 1px $main1 inset;
         }
+
         .bug__handle__back {
           position: absolute;
           right: 2%;

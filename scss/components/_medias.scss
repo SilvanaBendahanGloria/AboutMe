@@ -1,0 +1,14 @@
+/*Efecto tachado en About-me*/
+@media only screen and (max-width:480px) {
+    .about-me__tachado__span {
+        text-decoration: line-through;
+
+        &:before {
+            animation: none;
+        }
+    }
+
+    .boton a {
+        font-size: 0.5em;
+    }
+}
