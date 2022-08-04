@@ -47,7 +47,6 @@ html {
 
 .carousel {
   width: 75vw;
-  height: 75vh;
 }
 
 /*En Id Works*/
@@ -74,10 +73,9 @@ html {
   transform: rotateX(0deg);
 }
 
-.card-front--1 {
+.card-front {
   height: 100%;
   width: 100%;
-  background-image: url(/images/dgeyc.png);
   background-position: 50% 50%;
   background-size: cover;
   position: absolute;
@@ -86,76 +84,11 @@ html {
   backface-visibility: hidden;
   transform: rotateX(0deg);
   transition: 0.5s;
+  background-color: #242424;
+  color: white;
 }
-
-.card-front--2 {
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/dgeyc.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-
-.card-front--3 {
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/d&s.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-
-.card-front--4 {
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/caesar.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-
-.card-front--5 {
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/crillon.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-}
-
-.card-front--6 {
-  height: 100%;
-  width: 100%;
-  background-image: url(/images/argenta.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
+.card-front h3 {
+  font-size: 2.5em;
 }
 
 .card-back {
@@ -185,7 +118,12 @@ html {
 }
 
 .title__car {
-  margin-left: 20vw;
+  margin-left: 30vw;
+  width: 20vw;
+}
+.title__car h3 {
+  color: #688990;
+  font-size: 2em;
 }
 
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/

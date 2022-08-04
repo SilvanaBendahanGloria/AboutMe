@@ -33,7 +33,7 @@
 
 .carousel {
     width: 75vw;
-    height: 75vh;
+    
 }
 
 
@@ -63,10 +63,9 @@
     }
 }
  
-.card-front--1 {
+.card-front {
     height: 100%;
     width: 100%;
-    background-image:url(/images/dgeyc.png);
     background-position: 50% 50%;
     background-size: cover;
     position: absolute;
@@ -75,76 +74,12 @@
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: .5s;
-}
-  
-.card-front--2 {
-    height: 100%;
-    width: 100%;
-    background-image:url(/images/dgeyc.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
-}
-
-.card-front--3 {
-    height: 100%;
-    width: 100%;
-    background-image:url(/images/d&s.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
-}
-
-.card-front--4 {
-    height: 100%;
-    width: 100%;
-    background-image:url(/images/caesar.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
-}
-
-.card-front--5 {
-    height: 100%;
-    width: 100%;
-    background-image:url(/images/crillon.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
-}
-
-.card-front--6 {
-    height: 100%;
-    width: 100%;
-    background-image:url(/images/argenta.png);
-    background-position: 50% 50%;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
+    background-color: #242424;
+    color: white;
+    
+    h3 {
+      font-size: 2.5em;
+    }
 }
 
 .card-back {
@@ -177,7 +112,13 @@
 }
      
 .title__car {
-    margin-left: 20vw;
+    margin-left: 30vw;
+    width: 20vw;
+    
+    h3 {
+      color: #688990;
+      font-size: 2em;
+    }
 }
 
 /*Auto: CSS ART - Vintage VW Bug - https://codepen.io/shunyadezain/pen/MWypjVW*/
