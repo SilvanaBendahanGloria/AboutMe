@@ -20,6 +20,22 @@ html {
   height: 100vh;
 }
 
+.about-me__historia {
+  margin-top: 5vh;
+}
+
+h2 {
+  color: #242424;
+  font-size: 1.1 0.2em;
+  font-family: sans-serif;
+}
+
+.about-me__text {
+  color: #242424;
+  font-size: 1.1em;
+  font-family: sans-serif;
+}
+
 .about-me__tachado__span {
   position: relative;
 }

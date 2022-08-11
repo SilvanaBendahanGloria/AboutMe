@@ -4,6 +4,18 @@
   height: 100vh;
 }
 
+.about-me__historia {
+  margin-top: 5vh;
+}
+
+h2 {
+  @include fonts (nth($colors,5), 1.1.2em, nth($fonts, 2));
+}
+
+.about-me__text {
+  @include fonts (nth($colors,5), 1.1em, nth($fonts, 2));
+}
+
 .about-me__tachado__span {
   position: relative;
 }
