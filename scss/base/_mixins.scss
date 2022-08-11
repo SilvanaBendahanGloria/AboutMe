@@ -1,0 +1,13 @@
+//Position, top and left
+@mixin position($position, $top, $left) {
+    position: $position;
+    top: $top;
+    left: $left;
+} 
+
+//Fonts styles
+@mixin fonts ($color, $size, $family) {
+    color: $color;
+    font-size: $size;
+    font-family: $family;
+}

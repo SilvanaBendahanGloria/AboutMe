@@ -1,15 +1,13 @@
 /*Footer with gray background: https://bootsnipp.com/snippets/M56El*/
 footer {
-    font-family: nth($fonts, 1);
-    color: nth($colors, 3);
-    
+    @include fonts (nth($colors, 3), 1em,nth($fonts, 1) );
+        
     p, a {
-    font-size: 12px;
-    font-family: nth($fonts, 2);
+        @include fonts (nth($colors, 3), .8em, nth($fonts, 2) );
     }
     
-    h6 {
-        font-family: nth($fonts, 3);
+    h4 {
+        @include fonts (nth($colors, 3), 1em,nth($fonts, 3) );
         margin-bottom: 40px;
         position: relative;
 

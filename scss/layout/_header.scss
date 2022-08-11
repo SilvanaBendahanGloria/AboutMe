@@ -14,13 +14,12 @@ header {
   z-index: 10;
 
   div p {
-    color: nth($colors, 1);
+    @include fonts (nth($colors, 1), 2rem, nth($fonts, 1));
     position: fixed;
     top:0;
     right: 0;
     padding-top: 2%;
     padding-right: 5%;
-    font-size: 2rem;
   }
 }
 
