@@ -1,6 +1,6 @@
 /*Back to top - CodePen Home Simple pure CSS Arrow Button - https://codepen.io/melissacabral/pen/NvmJwx*/
 .boton {
-	background: #242424;
+	background: nth($colors, 4);
 	text-align:center;
 	font-size:100%;
 	margin:2em;
@@ -11,11 +11,11 @@
 }
 
 .to-top{
-	color:white;
+	color:nth($colors, 1);
 	padding-top:1.8em;
 	display:inline-block;
 	position:relative;
-	border-color:white;
+	border-color:nth($colors, 1);
 	text-decoration:none;
 	transition:all .3s ease-out;
 }
@@ -27,7 +27,7 @@
 	top:0;
 	left:50%;
 	margin-left:-.7em;
-	border:solid .13em white;
+	border:solid .13em nth($colors, 1);
 	border-radius:10em;
 	width:1.4em;
 	height:1.4em;
@@ -37,8 +37,8 @@
 }
 
 .to-top:hover{
-	color:pink;
-	border-color:pink;
+	color:nth($colors, 7);
+	border-color:nth($colors, 7);
 }
 
 .to-top:hover:before{
@@ -87,8 +87,8 @@
 	padding: 0;
 	width: 10px;
 	height: 10px;
-	border-top: 3px solid #242424;
-	border-right: 3px solid #242424;
+	border-top: 3px solid nth($colors, 4);
+	border-right: 3px solid nth($colors, 4);
 	behavior: url(-ms-transform.htc);
 	-moz-transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
@@ -100,7 +100,7 @@
 #scroll-title {
 	display: block;
 	text-transform: uppercase;
-	color: #242424;
+	color: nth($colors, 4);
 	font-family: Helvetica Neue, Helvetica, Arial;
 	font-size:14px;
 	font-weight:bold;
@@ -108,7 +108,7 @@
 
 	a {
 		text-decoration: none;
-		color: #242424;
+		color: nth($colors, 4);
 	}
 }
 
@@ -131,7 +131,7 @@
 	margin-left: -1px;
 	width: 3px;
 	height: 90px;
-	background: #242424;
+	background:nth($colors, 4);
 	content: ' ';
 }
 
