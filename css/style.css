@@ -941,7 +941,7 @@ html {
   display: block;
   text-transform: uppercase;
   color: #292929;
-  font-family: Helvetica Neue, Helvetica, Arial;
+  font-family: sans-serif;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -1275,15 +1275,15 @@ nav ul li a:hover {
 
 /*Footer with gray background: https://bootsnipp.com/snippets/M56El*/
 footer {
-  font-family: "Signika", sans-serif;
+  font-family: "Signika";
   color: #808080;
 }
 footer p, footer a {
   font-size: 12px;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 }
 footer h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto";
   margin-bottom: 40px;
   position: relative;
 }
@@ -1331,7 +1331,7 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: grey;
+  color: #808080;
   text-decoration: none;
 }
 footer ul li a:hover {
@@ -1340,7 +1340,7 @@ footer ul li a:hover {
 }
 
 .logo-part {
-  border-right: 1px solid grey;
+  border-right: 1px solid #808080;
   height: 100%;
 }
 

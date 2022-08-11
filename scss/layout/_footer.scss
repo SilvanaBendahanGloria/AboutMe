@@ -1,15 +1,15 @@
 /*Footer with gray background: https://bootsnipp.com/snippets/M56El*/
 footer {
-    font-family: 'Signika', sans-serif;
+    font-family: nth($fonts, 1);
     color: nth($colors, 3);
     
     p, a {
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: nth($fonts, 2);
     }
     
     h6 {
-        font-family: 'Playfair Display', serif;
+        font-family: nth($fonts, 3);
         margin-bottom: 40px;
         position: relative;
 
@@ -64,18 +64,18 @@ footer ul  {
     
         a{
             text-decoration: none;
-            color: grey;
+            color: nth($colors, 3);
             text-decoration:none;
 
             &:hover {
                 text-decoration: none;
-                color: #f5f5f5 !important;
+                color: nth($colors, 2) !important;
             }
         }
     }
 }
 
 .logo-part {
-    border-right: 1px solid grey;
+    border-right: 1px solid nth($colors, 3);
     height: 100%;
 }   
